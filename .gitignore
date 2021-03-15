@@ -1,19 +1,6 @@
-*.class
-*.log
-
-# sbt specific
-dist/*
-target/
-lib_managed/
-src_managed/
-project/project/target
-project/boot/
-project/plugins/project/
-
-# Scala-IDE specific
-.scala_dependencies
-
-# intellij
+target
 .idea
-.idea_modules
-*.iml
+.vscode
+.metals
+.bloop
+.bsp

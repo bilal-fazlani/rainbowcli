@@ -1,12 +1,7 @@
-package pl.project13.scala.rainbow
+package com.bilalfazlani.scala.rainbow
 
-import org.scalatest.{Matchers, FlatSpec}
-
-class ImplicitRainbowSpec extends FlatSpec with Matchers {
-
-  behavior of "Rainbow"
-
-  it should "colorize strings" in {
+class RainbowExtensionTest extends munit.FunSuite {
+  test("Rainbow should colorize strings") {
     val red = "red".red
     val blue = "blue".blue
     val yellow = "yellow".yellow
