@@ -1,13 +1,12 @@
 scala-rainbow
 =============
 
-Super simple terminal output colorizing for Scala.
-Using it you can colorize any string for terminal output and was tested on Linux and OSX, not on windows and there it probably sux ;-)
+## Scala 3 port of [ktoso/scala-rainbow](https://github.com/ktoso/scala-rainbow)
 
-Example
 -------
 
-<img src="https://raw.github.com/ktoso/scala-rainbow/master/doc/demo.png" alt="Scala Rainbow Demo"/>
+Super simple terminal output colorizing for Scala.
+Using it you can colorize any string for terminal output and was tested on Linux and OSX, not on windows and there it probably sux ;-)
 
 Download
 --------
@@ -17,41 +16,26 @@ It's published to sonatype and synced with Maven Central, so all you need to do 
 for sbt:
 
 ```scala
-val scalaRainbow = "pl.project13.scala" %% "rainbow" % "0.2"
+resolvers += "jitpack" at "https://jitpack.io"
+
+val scalaRainbow =  "com.github.bilal-fazlani" % "scala-rainbow" % "2d27b7de6b"
 
 libraryDependencies += scalaRainbow
 ```
 
-for maven:
-
-```xml
-<dependency>
-  <groupId>pl.project13.scala</groupId>
-  <artifactId>rainbow_2.10.4</artifactId> <!-- your scala version here -->
-  <version>0.2</version>
-</dependency>
-```
-
-The library is published for **Scala**: **2.9.1**, **2.9.2** (0.1) and **2.10.4**, **2.11.x** (0.2).
+The library is published for **Scala**: **3.0.0**
 
 Usage
 ------
 Using rainbow is as simple as it gets:
 
 ```scala
-import Rainbow._
+import com.bilalfazlani.scala.rainbow._
 
 println { "Warning, critical error!".red }
 ```
 
-You can us it as a mixin `with Rainbow` or `import Rainbow._` or import the **package object** `import pl.project13.scala.rainbow._`.
-For a list of available colors take a look at <a href="https://github.com/ktoso/scala-rainbow/blob/master/src/main/scala/pl/project13/scala/rainbow/Rainbow.scala">Rainbow.scala</a>.
-
-Yay, feedback!
--------------
-
-> btw I really like your lib!<br/>
-> It reminds me of "node-colors" for node.js
+For a list of available colors take a look at [rainbow.scala](/src/main/scala/com/bilalfazlani/scala/rainbow/rainbow.scala) 
 
 License
 -------
