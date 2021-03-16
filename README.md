@@ -11,8 +11,6 @@ Using it you can colorize any string for terminal output and was tested on Linux
 Download
 --------
 
-It's published to sonatype and synced with Maven Central, so all you need to do is:
-
 for sbt:
 
 ```scala
@@ -23,7 +21,7 @@ val scalaRainbow =  "com.github.bilal-fazlani" % "scala-rainbow" % "2d27b7de6b"
 libraryDependencies += scalaRainbow
 ```
 
-The library is published for **Scala**: **3.0.0**
+The library is published for **Scala 3**
 
 Usage
 ------
