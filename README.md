@@ -1,4 +1,4 @@
-# scala-rainbow
+# rainbowcli
 
 ## Forked from [ktoso/scala-rainbow](https://github.com/ktoso/scala-rainbow)
 
@@ -12,9 +12,9 @@ for sbt:
 ```scala
 resolvers += "jitpack" at "https://jitpack.io"
 
-val scalaRainbow =  "com.github.bilal-fazlani" % "scala-rainbow" % "2d27b7de6b"
+val rainbowcli =  "com.github.bilal-fazlani" % "rainbowcli" % "2.0.0"
 
-libraryDependencies += scalaRainbow
+libraryDependencies += rainbowcli
 ```
 
 The library is published for **Scala 3**
