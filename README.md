@@ -24,12 +24,12 @@ The library is published for **Scala 3**
 Using rainbow is as simple as it gets:
 
 ```scala
-import com.bilalfazlani.scala.rainbow._
+import com.bilalfazlani.rainbowcli.*
 
 println { "Warning, critical error!".red }
 ```
 
-For a list of available colors take a look at [rainbow.scala](/src/main/scala/com/bilalfazlani/scala/rainbow/rainbow.scala) 
+For a list of available colors take a look at [rainbow.scala](/com/bilalfazlani/rainbowcli/rainbow.scala) 
 
 ## License
 

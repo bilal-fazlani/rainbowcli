@@ -1,4 +1,4 @@
-package com.bilalfazlani.scala.rainbow
+package com.bilalfazlani.rainbowcli
 
 class RainbowExtensionTest extends munit.FunSuite {
   test("Rainbow should colorize strings") {

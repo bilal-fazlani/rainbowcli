@@ -1,4 +1,5 @@
-package com.bilalfazlani.scala.rainbow
+package com.bilalfazlani.rainbowcli
+
 import Console.*
 
 case class ColorContext(enable:Boolean)
