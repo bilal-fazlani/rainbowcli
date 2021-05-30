@@ -12,7 +12,7 @@ for sbt:
 ```scala
 resolvers += "jitpack" at "https://jitpack.io"
 
-val rainbowcli =  "com.github.bilal-fazlani" % "rainbowcli" % "2.0.0"
+val rainbowcli =  "com.github.bilal-fazlani" % "rainbowcli" % "2.0.1"
 
 libraryDependencies += rainbowcli
 ```
