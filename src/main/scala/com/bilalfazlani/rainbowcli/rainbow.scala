@@ -4,6 +4,8 @@ import Console.*
 
 case class ColorContext(enable:Boolean)
 
+given defaultColorContext:ColorContext = ColorContext(true)
+
 /**
  * To use rainbow simply do the following:
  * '''
