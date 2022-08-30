@@ -10,9 +10,8 @@ Using it you can colorize any string for terminal output and was tested on Linux
 for sbt:
 
 ```scala
-resolvers += "jitpack" at "https://jitpack.io"
 
-val rainbowcli =  "com.github.bilal-fazlani" % "rainbowcli" % "2.0.1"
+val rainbowcli =  "com.bilal-fazlani" % "rainbowcli" % "3.0.0"
 
 libraryDependencies += rainbowcli
 ```
@@ -26,10 +25,12 @@ Using rainbow is as simple as it gets:
 ```scala
 import com.bilalfazlani.rainbowcli.*
 
-println { "Warning, critical error!".red }
+given ColorContext = ColorContext(true)
+
+println { "Warning, critical error!".red.bold }
 ```
 
-For a list of available colors take a look at [rainbow.scala](/com/bilalfazlani/rainbowcli/rainbow.scala) 
+For a list of available colors take a look at [rainbow.scala](https://github.com/bilal-fazlani/rainbowcli/blob/master/src/main/scala/com/bilalfazlani/rainbowcli/rainbow.scala)
 
 ## License
 
